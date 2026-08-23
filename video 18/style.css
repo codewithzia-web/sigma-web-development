@@ -1,0 +1,17 @@
+.class1{
+    background-color: aqua;
+    color: white;
+    height: 200px;
+    padding: 10px;
+    margin: 35px;
+    border: 2px solid blue;
+    box-sizing: border-box;
+}
+.class2{
+    background-color: rgb(43, 43, 59);
+    color: white;
+    height: 200px;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid rgb(14, 14, 20);
+}
