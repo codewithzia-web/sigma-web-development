@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 10px;
+        }
+        .box{
+            /* box-sizing: border-box; */
+            border: 2px solid black;
+            width: 80vw;
+            margin: auto;
+            background-color: aqua;
+            font-size: 2rem;
+
+        }
+        .box1{
+            border: 2px solid red;
+            background-color: aqua;
+            margin: 30px auto;
+            width: 80vw;
+            min-height: 80vh;
+            font-size: 18px;
+        }
+        .box1 > div{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">this is box</div>
+    <div class="box1">
+        <div>
+            this is box Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam aut quod obcaecati veniam temporibus dolorum neque minima, architecto nulla necessitatibus, aliquid labore nam, consequuntur quibusdam magni consequatur sint sed.
+        </div>
+        </div>
+            
+        </body>
+        </html>
