@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selector</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            background-color: black;
+            color: white;
+        } */
+        /* .box:nth-child(2){
+            background-color: aqua;
+
+        } */
+        /* .box:nth-last-child(1){
+            background-color: green;
+        } */
+        .box::first-letter{
+            font-size: 50px;
+        }
+        /* .boxes > p {
+            background-color: lightblue;
+        } */
+        /* .box, span{
+            background-color: blue;
+        } */
+         /* .boxes *{
+            font-size: 20px;
+        } */
+        p, span, [date-x="primary"]{
+            color: brown;
+        }
+        .box:last-child{
+            background-color: blueviolet;
+        }
+        ::selection{
+            background-color: black;
+            color: white;
+        }
+        .boxes::before{
+            content: "i am learning css ";
+        }
+        .boxes::after{
+            content: "to make website design";
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae consequatur facilis voluptates dolorum tenetur possimus provident dolor qui dicta, eligendi quos alias odio optio neque fugit cupiditate. Quibusdam, expedita! Lorem ipsum dolor sit amet consectetur </div>
+        <div class="box" date-x="primary">this is also box</div>
+        <div class="box">this is aldo another box</div>
+    </div>
+    <p>hitsi sjskdf jls hksjf lkjfsljflkajslk</p>
+    <p>this is another para</p>
+    <span>i am span</span>
+</body>
+</html>
