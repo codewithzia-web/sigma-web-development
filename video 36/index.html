@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varaible</title>
+    <style>
+        /* :root{
+            --primary-color: darkgray;
+            --sec-color: yellow;
+            --color: brown;
+            --bac-color: yellowgreen;
+            
+        } */
+        :root{
+            --primary-color: rgb(175, 106, 106);
+            --sec-color: rgb(84, 238, 199);
+            --color: rgb(236, 142, 18);
+            --bac-color: rgb(156, 209, 9);
+            
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: var(--bac-color);
+        }
+        nav{
+            margin: 5px;
+            background-color: var(--primary-color);
+            border: 2px solid var(--color);
+            width: 100vw;
+            height: 10vh;
+            border-radius: 6px;
+        }
+        ul li{
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bolder;
+            background-color: var(--sec-color);
+            color: var(--color);
+            list-style: none;
+            padding: 15px;
+            margin: 10px;
+            border: 2px solid var(--color);
+            border-radius: 6px;
+            text-transform: capitalize;
+            
+        }
+        a{
+            text-decoration: none;
+            color: var(--color);
+        }
+        p{
+            background-color: var(--sec-color);
+            color: var(--color);
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/">about</a></li>
+                <li><a href="/">content</a></li>
+                <li><a href="/">services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <p>copyright &copy;&nbsp;&nbsp;codewihtzia-wb</p>
+    </footer>
+</body>
+</html>
