@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        .cards{
+            display: flow-root;
+            border: 3px solid black;
+        }
+        .class{
+            border: 2px solid red;
+            /* float: right; */
+        }
+        img{
+            float: left;
+
+        }
+        .class:nth-child(3){
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="class">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, alias? Ex alias, placeat voluptates, dolores totam corporis dolore architecto reiciendis ratione ipsam eos quo optio obcaecati exercitationem, consectetur nemo amet.</p>
+        </div>
+        <img src="/pexels-mizunokozuki-12899191 (1).jpg" alt="" width="230">
+        <div class="class">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat aliquid numquam iste perspiciatis, quae recusandae ad reiciendis beatae sequi ut quidem suscipit assumenda? Consectetur, quis eos rerum obcaecati facilis, quidem ipsum nobis pariatur laudantium dicta dignissimos neque accusantium quo quam dolorem itaque sint qui minus temporibus voluptas voluptatibus! Sint ad aperiam minus error temporibus voluptatum quidem dolorem accusamus tempore quia exercitationem aut voluptatem, porro veritatis vel molestias nemo eveniet rem rerum. Rerum blanditiis facere non consequuntur corporis deserunt dolorum unde ea adipisci enim ipsa commodi totam, incidunt odio nostrum temporibus cupiditate fuga sunt dolores delectus molestias accusamus eum nobis quae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione nisi quaerat dicta, sequi suscipit aut, saepe mollitia exercitationem ut velit voluptatibus? Quam magni illo voluptas fugiat reiciendis dolore iure.</div>
+        <div class="class">this is class</div>
+    </div>
+</body>
+</html>
