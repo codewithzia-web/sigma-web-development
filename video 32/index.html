@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color: darkgray;
+            --backcolor: rgb(24, 24, 221);
+            --deppad: 25px;
+            --borcolor: darkgreen;
+            --backcolor1: red;
+            --backcolor2: yellow;
+            --backcolor3: orange;
+            --borcolor1: white;
+
+        }
+        nav ul li{
+            list-style: none;
+            border: 3px solid var(--borcolor1);
+            padding: var(--deppad);
+            margin: 3px;
+            background-color: var(--backcolor);
+            color: var(--color);
+        }
+        nav ul{
+            background-color: var(--backcolor);
+            border: 2px solid var(--borcolor);
+            display: flex;
+
+        }
+        .blue{
+            background-color: var(--backcolor1);
+        }
+        .yellow{
+            background-color: var(--backcolor2);
+        }
+        .orange{
+            background-color: var(--backcolor3);
+        }
+        p{
+            background-color: var(--backcolor);
+            color: var(--color);
+            border: 2px solid var(--borcolor);
+            padding: var(--deppad);
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="blue">home</li>
+            <li class="yellow">about</li>
+            <li class="orange">content</li>
+        </ul>
+    </nav>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque corporis neque deleniti molestias, dolorum quia magnam et quasi, distinctio sed perspiciatis, saepe provident. Ipsam vero neque ratione minima natus quam.</p>
+</body>
+</html>
