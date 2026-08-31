@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flex properties</title>
+    <style>
+        .container{
+            display: flex;
+            height: 80vh;
+            border: 2px solid red;
+            justify-content: flex-start;
+            align-items: center;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* align-content: flex-start; */
+            /* flex-flow: row wrap; */
+            /* gap: 30px;
+            row-gap: 10px;
+            column-gap: 10px; */
+            
+            /* gap: 15px 20px; */
+        }
+        .iteam{
+            width:62px ;
+            height: 62px;
+            border: 2px solid black;
+            background-color: blueviolet;
+            color: white;
+            /* flex-grow: 1; */
+            /* margin: 4px; */
+        }
+        .iteam-1{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+        }
+        .order-1{
+            order: 1;
+            align-self: baseline;
+        }
+        .order-2{
+            order: 2;
+            align-self: flex-end;
+        }
+        .order-3{
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="iteam iteam-1">1</div>
+        <div class="iteam order-1">2</div>
+        <div class="iteam order-2">3</div>
+        <div class="iteam order-3">4</div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+       
+    </div>
+</body>
+</html>
