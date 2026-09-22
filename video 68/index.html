@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+    </div>
+    <script>
+        // document.getElementsByClassName("box")[0].style.backgroundColor = "red";
+        // document.getElementById("box2").style.color = "yellow";
+        // document.getElementsByClassName("box")[2].style.backgroundColor = "green";
+        // document.getElementsByClassName("box")[3].style.backgroundColor = "yellow";
+        // document.getElementsByClassName("box")[4].style.backgroundColor = "purple";
+        // document.querySelector(".container").style.border = "2px solid black";
+        document.querySelectorAll(".box").forEach((e) => {
+           console.log(e);
+           e.style.backgroundColor = "blue";
+
+        });
+        console.log(document.querySelector(".container"));
+        console.log(document.querySelectorAll(".box"));
+
+    </script>
+</body>
+</html>
