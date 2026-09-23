@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lorem10{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="lorem10" data-createdby="harry" data-removeby="zia">this is the box</div>
+        <div class="lorem10" data-createdby="harry" data-removeby="zia">this is the box</div>
+    </div>
+    <script>
+        // let div = document.createElement("div");
+        // div.innerHTML = "this is the box <b> created by harry and removed by zia</b>";
+        // div.setAttribute("class", "create")
+        // document.querySelector(".container").replaceChild(div, document.querySelector(".lorem10"))
+      let cont = document.querySelector(".container") 
+      cont.insertAdjacentHTML("beforebegin", "<b>this a text</b>")
+    </script>
+</body>
+</html>
